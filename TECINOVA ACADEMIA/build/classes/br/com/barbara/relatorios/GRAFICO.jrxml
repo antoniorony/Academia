@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.2.0.final using JasperReports Library version 6.2.0  -->
+<!-- 2019-03-06T20:08:30 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="GRAFICO" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="34bca0cd-1502-4bc4-ab05-75e6fd243496">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="grafico"/>
+	<queryString>
+		<![CDATA[select *from mensalidade]]>
+	</queryString>
+	<field name="idmensalidade" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dataEntrada" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="idCliente" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="valor" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ano" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="m1" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="m2" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="m3" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="m4" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="m5" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="m6" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="m7" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="m8" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="m9" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="m10" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="m11" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="m12" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<variable name="MESESABERTOS" class="java.lang.Integer" calculation="Sum">
+		<variableExpression><![CDATA[12-($F{m1}+$F{m2}+$F{m3}+$F{m4}+$F{m5}+$F{m6}+$F{m7}+$F{m8}+$F{m9}+$F{m10}+$F{m11}+$F{m12})]]></variableExpression>
+	</variable>
+	<variable name="SOMA" class="java.lang.Float" calculation="Sum">
+		<variableExpression><![CDATA[$F{m1}+$F{m2}+$F{m3}+$F{m4}+$F{m5}+$F{m6}+$F{m7}+$F{m8}+$F{m9}+$F{m10}+$F{m11}+$F{m12}]]></variableExpression>
+	</variable>
+	<group name="idmensalidade">
+		<groupExpression><![CDATA[$F{idmensalidade}]]></groupExpression>
+	</group>
+	<group name="dataEntrada">
+		<groupExpression><![CDATA[$F{dataEntrada}]]></groupExpression>
+	</group>
+	<group name="idCliente">
+		<groupExpression><![CDATA[$F{idCliente}]]></groupExpression>
+	</group>
+	<group name="valor">
+		<groupExpression><![CDATA[$F{valor}]]></groupExpression>
+	</group>
+	<group name="ano">
+		<groupExpression><![CDATA[$F{ano}]]></groupExpression>
+	</group>
+	<group name="m1">
+		<groupExpression><![CDATA[$F{m1}]]></groupExpression>
+	</group>
+	<group name="m2">
+		<groupExpression><![CDATA[$F{m2}]]></groupExpression>
+	</group>
+	<group name="m3">
+		<groupExpression><![CDATA[$F{m3}]]></groupExpression>
+	</group>
+	<group name="m4">
+		<groupExpression><![CDATA[$F{m4}]]></groupExpression>
+	</group>
+	<group name="m5">
+		<groupExpression><![CDATA[$F{m5}]]></groupExpression>
+	</group>
+	<group name="m6">
+		<groupExpression><![CDATA[$F{m6}]]></groupExpression>
+	</group>
+	<group name="m7">
+		<groupExpression><![CDATA[$F{m7}]]></groupExpression>
+	</group>
+	<group name="m8">
+		<groupExpression><![CDATA[$F{m8}]]></groupExpression>
+	</group>
+	<group name="m9">
+		<groupExpression><![CDATA[$F{m9}]]></groupExpression>
+	</group>
+	<group name="m10">
+		<groupExpression><![CDATA[$F{m10}]]></groupExpression>
+	</group>
+	<group name="m11">
+		<groupExpression><![CDATA[$F{m11}]]></groupExpression>
+	</group>
+	<group name="m12">
+		<groupExpression><![CDATA[$F{m12}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="54" splitType="Stretch">
+			<frame>
+				<reportElement mode="Opaque" x="-20" y="-20" width="597" height="65" forecolor="#006699" backcolor="#2B5784" uuid="3a7d8bb5-6905-43f4-b305-926fca7d0ce2"/>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="3" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="62" splitType="Stretch">
+			<textField>
+				<reportElement x="30" y="30" width="100" height="30" uuid="7fe710ae-eb97-4c06-afa7-3fbc8877ce47"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[($F{m1}+$F{m2}+$F{m3}+$F{m4}+$F{m5}+$F{m6}+$F{m7}+$F{m8}+$F{m9}+$F{m10}+$F{m11}+$F{m12})*$F{valor}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="430" y="30" width="100" height="30" uuid="9fa57e54-e5cc-47c8-bc11-bcb53fba109e"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{valor}*12-(($F{m1}+$F{m2}+$F{m3}+$F{m4}+$F{m5}+$F{m6}+$F{m7}+$F{m8}+$F{m9}+$F{m10}+$F{m11}+$F{m12})*50)]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="30" y="0" width="100" height="21" uuid="8e635e04-03c7-420b-829c-918874d61eac"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[VALOR PAGO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="430" y="0" width="115" height="21" uuid="f4778639-7412-458b-a2ec-820113d9b3ec"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[VALOR ABERTO]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="367" splitType="Stretch">
+			<barChart>
+				<chart evaluationTime="Report" theme="aegean">
+					<reportElement x="32" y="50" width="490" height="310" uuid="8dba18aa-164f-495a-a9db-7fc9447fe9f8"/>
+					<chartTitle/>
+					<chartSubtitle/>
+					<chartLegend/>
+				</chart>
+				<categoryDataset>
+					<categorySeries>
+						<seriesExpression><![CDATA["QUITADO"]]></seriesExpression>
+						<categoryExpression><![CDATA[$F{ano}]]></categoryExpression>
+						<valueExpression><![CDATA[$V{SOMA}]]></valueExpression>
+					</categorySeries>
+					<categorySeries>
+						<seriesExpression><![CDATA["DEVEDOR"]]></seriesExpression>
+						<categoryExpression><![CDATA[$F{ano}]]></categoryExpression>
+						<valueExpression><![CDATA[$V{MESESABERTOS}]]></valueExpression>
+					</categorySeries>
+				</categoryDataset>
+				<barPlot>
+					<plot/>
+					<itemLabel/>
+					<categoryAxisFormat>
+						<axisFormat/>
+					</categoryAxisFormat>
+					<valueAxisFormat>
+						<axisFormat/>
+					</valueAxisFormat>
+				</barPlot>
+			</barChart>
+			<staticText>
+				<reportElement x="30" y="-1" width="100" height="15" uuid="ac6b0e58-313c-4093-913f-dbf73f655e2b"/>
+				<text><![CDATA[PARCELAS PAGAS]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="30" y="9" width="70" height="20" uuid="f7f9b600-f6c6-4636-b06d-59fae5357812"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{SOMA}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="432" y="-1" width="110" height="15" uuid="bf1d451c-652b-4430-aa69-6e04bca9a7ba"/>
+				<text><![CDATA[PARCELAS ABERTAS]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="450" y="9" width="60" height="30" uuid="5845c9f9-a696-4a19-b1f4-325578198044"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{MESESABERTOS}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="20" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="9" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="12" splitType="Stretch"/>
+	</summary>
+</jasperReport>

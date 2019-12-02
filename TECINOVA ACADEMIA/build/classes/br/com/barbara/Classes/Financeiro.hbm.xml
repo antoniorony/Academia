@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 06/02/2019 16:30:10 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="br.com.barbara.Classes.Financeiro" table="financeiro" catalog="tecinova" optimistic-lock="version">
+        <id name="idFinanceiro" type="java.lang.Integer">
+            <column name="idFinanceiro" />
+            <generator class="identity" />
+        </id>
+        <property name="mesReferencia" type="string">
+            <column name="mesReferencia" length="10" not-null="true" />
+        </property>
+        <property name="idMensalidade" type="int">
+            <column name="idMensalidade" not-null="true" />
+        </property>
+        <property name="dataPagamento" type="date">
+            <column name="dataPagamento" length="10" not-null="true" />
+        </property>
+        <property name="idCliente" type="int">
+            <column name="idCliente" not-null="true" />
+        </property>
+        <property name="valorPagamento" type="float">
+            <column name="valorPagamento" precision="12" scale="0" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

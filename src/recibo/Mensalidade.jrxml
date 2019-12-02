@@ -1,0 +1,702 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.2.0.final using JasperReports Library version 6.2.0  -->
+<!-- 2019-03-05T19:08:45 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Mensalidade" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c72f96d9-38c2-435f-af49-97a4a2b29c57">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="687"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="joinfichaclientes.xml"/>
+	<style name="Title" forecolor="#FFFFFF" fontName="Times New Roman" fontSize="50" isBold="false"/>
+	<style name="SubTitle" forecolor="#666666" fontName="Times New Roman" fontSize="18" isBold="false"/>
+	<style name="Column header" forecolor="#666666" fontName="Times New Roman" fontSize="14" isBold="true"/>
+	<style name="Detail" mode="Transparent" fontName="Times New Roman"/>
+	<style name="Row" mode="Transparent" fontName="Times New Roman" pdfFontName="Times-Roman">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$V{REPORT_COUNT}%2 == 0]]></conditionExpression>
+			<style mode="Opaque" backcolor="#F0EFEF"/>
+		</conditionalStyle>
+	</style>
+	<style name="m1">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$F{m1}>0]]></conditionExpression>
+			<style forecolor="#2B5784" fontName="DejaVu Serif"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$F{m1}<1]]></conditionExpression>
+			<style forecolor="#FF0400"/>
+		</conditionalStyle>
+	</style>
+	<style name="m2">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$F{m2}>0]]></conditionExpression>
+			<style forecolor="#2B5784" fontName="DejaVu Serif"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$F{m2}<1]]></conditionExpression>
+			<style forecolor="#FF0400"/>
+		</conditionalStyle>
+	</style>
+	<style name="m3">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$F{m3}>0]]></conditionExpression>
+			<style forecolor="#2B5784" fontName="DejaVu Serif"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$F{m3}<1]]></conditionExpression>
+			<style forecolor="#FF0400"/>
+		</conditionalStyle>
+	</style>
+	<style name="m4">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$F{m4}>0]]></conditionExpression>
+			<style forecolor="#2B5784" fontName="DejaVu Serif"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$F{m4}<1]]></conditionExpression>
+			<style forecolor="#FF0400"/>
+		</conditionalStyle>
+	</style>
+	<style name="m5">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$F{m5}>0]]></conditionExpression>
+			<style forecolor="#2B5784" fontName="DejaVu Serif"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$F{m5}<1]]></conditionExpression>
+			<style forecolor="#FF0400"/>
+		</conditionalStyle>
+	</style>
+	<style name="m6">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$F{m6}>0]]></conditionExpression>
+			<style forecolor="#2B5784" fontName="DejaVu Serif"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$F{m6}<1]]></conditionExpression>
+			<style forecolor="#FF0400"/>
+		</conditionalStyle>
+	</style>
+	<style name="m7">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$F{m7}>0]]></conditionExpression>
+			<style forecolor="#2B5784" fontName="DejaVu Serif"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$F{m7}<1]]></conditionExpression>
+			<style forecolor="#FF0400"/>
+		</conditionalStyle>
+	</style>
+	<style name="m8">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$F{m8}>0]]></conditionExpression>
+			<style forecolor="#2B5784" fontName="DejaVu Serif"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$F{m8}<1]]></conditionExpression>
+			<style forecolor="#FF0400"/>
+		</conditionalStyle>
+	</style>
+	<style name="m9">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$F{m9}>0]]></conditionExpression>
+			<style forecolor="#2B5784" fontName="DejaVu Serif"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$F{m9}<1]]></conditionExpression>
+			<style forecolor="#FF0400"/>
+		</conditionalStyle>
+	</style>
+	<style name="m10">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$F{m10}>0]]></conditionExpression>
+			<style forecolor="#2B5784" fontName="DejaVu Serif"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$F{m10}<1]]></conditionExpression>
+			<style forecolor="#FF0400"/>
+		</conditionalStyle>
+	</style>
+	<style name="m11">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$F{m11}>0]]></conditionExpression>
+			<style forecolor="#2B5784" fontName="DejaVu Serif"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$F{m11}<1]]></conditionExpression>
+			<style forecolor="#FF0400"/>
+		</conditionalStyle>
+	</style>
+	<style name="m12">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$F{m12}>0]]></conditionExpression>
+			<style forecolor="#2B5784" fontName="DejaVu Serif"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$F{m12}<1]]></conditionExpression>
+			<style forecolor="#FF0400"/>
+		</conditionalStyle>
+	</style>
+	<subDataset name="PieChartDataset" uuid="39581794-7f4c-48d6-8f6a-b421776f515c"/>
+	<queryString>
+		<![CDATA[select mensalidade.idmensalidade, mensalidade.dataEntrada, mensalidade.idCliente, mensalidade.valor, mensalidade.ano, mensalidade.m1, mensalidade.m2, mensalidade.m3, mensalidade.m4, mensalidade.m5, mensalidade.m6, mensalidade.m7, mensalidade.m8, mensalidade.m9, mensalidade.m10, mensalidade.m11, mensalidade.m12, clientes.nome, clientes.cpf, clientes.telefone from mensalidade inner join clientes on mensalidade.idCliente = clientes.idCliente]]>
+	</queryString>
+	<field name="idmensalidade" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dataEntrada" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="idCliente" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="valor" class="java.lang.Float">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ano" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="m1" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="m2" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="m3" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="m4" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="m5" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="m6" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="m7" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="m8" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="m9" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="m10" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="m11" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="m12" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nome" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpf" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="telefone" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<variable name="idCliente1" class="java.lang.Integer" resetType="Group" resetGroup="Group1" calculation="Count">
+		<variableExpression><![CDATA[$F{idCliente}]]></variableExpression>
+	</variable>
+	<variable name="valor1" class="java.lang.Integer" resetType="Group" resetGroup="Group2" calculation="Count">
+		<variableExpression><![CDATA[$F{valor}]]></variableExpression>
+	</variable>
+	<variable name="nome1" class="java.lang.Integer" resetType="Group" resetGroup="Group1" calculation="Count">
+		<variableExpression><![CDATA[$F{nome}]]></variableExpression>
+	</variable>
+	<variable name="cpf1" class="java.lang.Integer" resetType="Group" resetGroup="Group1" calculation="Count">
+		<variableExpression><![CDATA[$F{cpf}]]></variableExpression>
+	</variable>
+	<variable name="telefone1" class="java.lang.Integer" resetType="Group" resetGroup="Group2" calculation="Count">
+		<variableExpression><![CDATA[$F{telefone}]]></variableExpression>
+	</variable>
+	<variable name="m11" class="java.lang.Integer" resetType="Group" resetGroup="Group1" calculation="Count">
+		<variableExpression><![CDATA[$F{m1}]]></variableExpression>
+	</variable>
+	<variable name="m12" class="java.lang.Integer" resetType="Group" resetGroup="Group1" calculation="Variance">
+		<variableExpression><![CDATA[$F{m1}]]></variableExpression>
+	</variable>
+	<variable name="m121" class="java.lang.Integer" resetType="Group" resetGroup="Group1" calculation="Variance">
+		<variableExpression><![CDATA[$F{m12}]]></variableExpression>
+	</variable>
+	<variable name="Paga" class="java.lang.String">
+		<variableExpression><![CDATA[TEXT(1,"OK")]]></variableExpression>
+	</variable>
+	<group name="Group1">
+		<groupExpression><![CDATA[$F{idmensalidade}]]></groupExpression>
+		<groupHeader>
+			<band height="31">
+				<frame>
+					<reportElement mode="Opaque" x="4" y="7" width="551" height="24" forecolor="#B89F7D" backcolor="#2B5784" uuid="619d89ef-7c2f-4167-a52a-be5e7af8783c"/>
+					<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+						<reportElement style="SubTitle" isPrintRepeatedValues="false" x="2" y="1" width="98" height="23" forecolor="#FFFFFF" uuid="2187fac7-7130-4a2e-aa99-ae4eab58336f"/>
+						<textElement>
+							<font fontName="Arial" size="14" isBold="false"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$F{idmensalidade}]]></textFieldExpression>
+					</textField>
+					<textField>
+						<reportElement x="70" y="0" width="306" height="20" forecolor="#FFFFFF" uuid="0ae03821-b5d0-45e8-81d4-3014033fa7f0"/>
+						<textElement>
+							<font size="14" isBold="true"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$F{nome}]]></textFieldExpression>
+					</textField>
+					<textField>
+						<reportElement x="370" y="0" width="179" height="20" forecolor="#FFFFFF" uuid="0d4fa832-dd7a-4569-b66d-8b0873e2e312"/>
+						<textElement>
+							<font size="14"/>
+						</textElement>
+						<textFieldExpression><![CDATA["CPF: "+$F{cpf}]]></textFieldExpression>
+					</textField>
+				</frame>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="162">
+				<textField>
+					<reportElement key="" style="m7" x="95" y="42" width="30" height="20" uuid="e519826f-5790-4e85-9b97-45c808181002"/>
+					<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+						<topPen lineWidth="0.5"/>
+						<leftPen lineWidth="0.5"/>
+						<bottomPen lineWidth="0.5"/>
+						<rightPen lineWidth="0.5"/>
+					</box>
+					<textFieldExpression><![CDATA[(($F{m7} == 1) ?  "PAG" : "ABE" )
+
+
+]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="45" y="42" width="50" height="20" uuid="c2de1c59-1054-42e6-97e6-edb6ed1245fc"/>
+					<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+						<topPen lineWidth="0.5"/>
+						<leftPen lineWidth="0.5"/>
+						<bottomPen lineWidth="0.5"/>
+						<rightPen lineWidth="0.5"/>
+					</box>
+					<text><![CDATA[JULHO:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="129" y="42" width="62" height="20" uuid="80734bce-cd35-4eb9-b24c-fd13fa00b574"/>
+					<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+						<topPen lineWidth="0.5"/>
+						<leftPen lineWidth="0.5"/>
+						<bottomPen lineWidth="0.5"/>
+						<rightPen lineWidth="0.5"/>
+					</box>
+					<text><![CDATA[AGOSTO]]></text>
+				</staticText>
+				<textField>
+					<reportElement key="" style="m8" x="191" y="42" width="30" height="20" uuid="a4798c11-4c8d-4b16-a555-028232e17ef0"/>
+					<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+						<topPen lineWidth="0.5"/>
+						<leftPen lineWidth="0.5"/>
+						<bottomPen lineWidth="0.5"/>
+						<rightPen lineWidth="0.5"/>
+					</box>
+					<textFieldExpression><![CDATA[(($F{m8} == 1) ?  "PAG" : "ABE" )
+
+]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="225" y="42" width="42" height="20" uuid="0a4cc5b4-82ca-4859-97ec-b41f995f3da1"/>
+					<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+						<topPen lineWidth="0.5"/>
+						<leftPen lineWidth="0.5"/>
+						<bottomPen lineWidth="0.5"/>
+						<rightPen lineWidth="0.5"/>
+					</box>
+					<text><![CDATA[SETEMBRO: ]]></text>
+				</staticText>
+				<textField>
+					<reportElement key="" style="m9" x="267" y="42" width="30" height="20" uuid="382946e7-e5c0-4a9b-a2cc-cddbd844a129"/>
+					<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+						<topPen lineWidth="0.5"/>
+						<leftPen lineWidth="0.5"/>
+						<bottomPen lineWidth="0.5"/>
+						<rightPen lineWidth="0.5"/>
+					</box>
+					<textFieldExpression><![CDATA[(($F{m9} == 1) ?  "PAG" : "ABE" )
+
+]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="301" y="42" width="32" height="20" uuid="da62bed5-6d54-4510-9f70-3df22ff2c1a2"/>
+					<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+						<topPen lineWidth="0.5"/>
+						<leftPen lineWidth="0.5"/>
+						<bottomPen lineWidth="0.5"/>
+						<rightPen lineWidth="0.5"/>
+					</box>
+					<text><![CDATA[OUTUBRO:]]></text>
+				</staticText>
+				<textField>
+					<reportElement key="" style="m10" x="333" y="42" width="30" height="20" uuid="8bb70141-387c-484b-838a-55f1dc59ba14"/>
+					<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+						<topPen lineWidth="0.5"/>
+						<leftPen lineWidth="0.5"/>
+						<bottomPen lineWidth="0.5"/>
+						<rightPen lineWidth="0.5"/>
+					</box>
+					<textFieldExpression><![CDATA[(($F{m10} == 1) ?  "PAG" : "ABE" )
+
+]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="367" y="42" width="30" height="20" uuid="aed6ac6c-d13f-4214-b301-ecb523504595"/>
+					<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+						<topPen lineWidth="0.5"/>
+						<leftPen lineWidth="0.5"/>
+						<bottomPen lineWidth="0.5"/>
+						<rightPen lineWidth="0.5"/>
+					</box>
+					<text><![CDATA[NOVEMBRO: ]]></text>
+				</staticText>
+				<textField>
+					<reportElement key="" style="m11" x="397" y="42" width="30" height="20" uuid="f2bfb9b8-7172-4194-981b-745f10629add"/>
+					<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+						<topPen lineWidth="0.5"/>
+						<leftPen lineWidth="0.5"/>
+						<bottomPen lineWidth="0.5"/>
+						<rightPen lineWidth="0.5"/>
+					</box>
+					<textFieldExpression><![CDATA[(($F{m11} == 1) ?  "PAG" : "ABE" )
+
+]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="431" y="41" width="38" height="20" uuid="b4f07a94-e11f-4bea-a48b-9d8ab1714e39"/>
+					<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+						<topPen lineWidth="0.5"/>
+						<leftPen lineWidth="0.5"/>
+						<bottomPen lineWidth="0.5"/>
+						<rightPen lineWidth="0.5"/>
+					</box>
+					<text><![CDATA[DEZEMBRO:]]></text>
+				</staticText>
+				<textField>
+					<reportElement key="" style="m12" x="469" y="41" width="30" height="20" uuid="3f13e6eb-079b-497e-83b4-9f8cb2f7e80e"/>
+					<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+						<topPen lineWidth="0.5"/>
+						<leftPen lineWidth="0.5"/>
+						<bottomPen lineWidth="0.5"/>
+						<rightPen lineWidth="0.5"/>
+					</box>
+					<textFieldExpression><![CDATA[(($F{m12} == 1) ?  "PAG" : "ABE" )
+
+]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement key="" style="m6" x="469" y="20" width="30" height="20" uuid="ca74cb95-15e8-4de7-b442-05227d5f9478"/>
+					<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+						<topPen lineWidth="0.5"/>
+						<leftPen lineWidth="0.5"/>
+						<bottomPen lineWidth="0.5"/>
+						<rightPen lineWidth="0.5"/>
+					</box>
+					<textFieldExpression><![CDATA[(($F{m6} == 1) ?  "PAG" : "ABE" )
+
+
+]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="431" y="20" width="38" height="20" uuid="fc1c1ce6-3d8d-4ec6-a71b-317632285207"/>
+					<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+						<topPen lineWidth="0.5"/>
+						<leftPen lineWidth="0.5"/>
+						<bottomPen lineWidth="0.5"/>
+						<rightPen lineWidth="0.5"/>
+					</box>
+					<text><![CDATA[JUNHO:]]></text>
+				</staticText>
+				<textField>
+					<reportElement key="" style="m5" x="397" y="21" width="30" height="20" uuid="65254816-eb50-4534-9f81-901040293291"/>
+					<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+						<topPen lineWidth="0.5"/>
+						<leftPen lineWidth="0.5"/>
+						<bottomPen lineWidth="0.5"/>
+						<rightPen lineWidth="0.5"/>
+					</box>
+					<textFieldExpression><![CDATA[(($F{m5} == 1) ?  "PAG" : "ABE" )
+
+
+]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="367" y="21" width="30" height="20" uuid="690af209-7bdd-4b5a-98a5-161e90c67f59"/>
+					<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+						<topPen lineWidth="0.5"/>
+						<leftPen lineWidth="0.5"/>
+						<bottomPen lineWidth="0.5"/>
+						<rightPen lineWidth="0.5"/>
+					</box>
+					<text><![CDATA[MAIO: ]]></text>
+				</staticText>
+				<textField>
+					<reportElement key="" style="m4" x="333" y="21" width="30" height="20" uuid="60fb60b4-27b2-4908-ba85-18611aab17c8"/>
+					<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+						<topPen lineWidth="0.5"/>
+						<leftPen lineWidth="0.5"/>
+						<bottomPen lineWidth="0.5"/>
+						<rightPen lineWidth="0.5"/>
+					</box>
+					<textFieldExpression><![CDATA[(($F{m4} == 1) ?  "PAG" : "ABE" )
+
+
+]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="301" y="21" width="32" height="20" uuid="0bc9f16e-dd18-4d7d-a5d1-87cd3f73d9c0"/>
+					<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+						<topPen lineWidth="0.5"/>
+						<leftPen lineWidth="0.5"/>
+						<bottomPen lineWidth="0.5"/>
+						<rightPen lineWidth="0.5"/>
+					</box>
+					<text><![CDATA[ABRIL: ]]></text>
+				</staticText>
+				<textField>
+					<reportElement key="" style="m3" x="267" y="21" width="30" height="20" uuid="7ec2c1c5-57ec-45e1-9316-fbc56761fa72"/>
+					<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+						<topPen lineWidth="0.5"/>
+						<leftPen lineWidth="0.5"/>
+						<bottomPen lineWidth="0.5"/>
+						<rightPen lineWidth="0.5"/>
+					</box>
+					<textFieldExpression><![CDATA[(($F{m3} == 1) ?  "PAG" : "ABE" )
+
+]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="225" y="21" width="42" height="20" uuid="c42c1203-62a6-48cd-8cd3-dcb32310a444"/>
+					<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+						<topPen lineWidth="0.5"/>
+						<leftPen lineWidth="0.5"/>
+						<bottomPen lineWidth="0.5"/>
+						<rightPen lineWidth="0.5"/>
+					</box>
+					<text><![CDATA[MARÇO: ]]></text>
+				</staticText>
+				<textField>
+					<reportElement key="" style="m2" x="191" y="21" width="30" height="20" uuid="bebf5b95-4163-4536-966b-f578869296d9"/>
+					<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+						<topPen lineWidth="0.5"/>
+						<leftPen lineWidth="0.5"/>
+						<bottomPen lineWidth="0.5"/>
+						<rightPen lineWidth="0.5"/>
+					</box>
+					<textFieldExpression><![CDATA[(($F{m2} == 1) ?  "PAG" : "ABE" )
+]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="129" y="21" width="62" height="20" uuid="ce638c9b-183e-41a1-ad51-0566343c64ac"/>
+					<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+						<topPen lineWidth="0.5"/>
+						<leftPen lineWidth="0.5"/>
+						<bottomPen lineWidth="0.5"/>
+						<rightPen lineWidth="0.5"/>
+					</box>
+					<text><![CDATA[FEVEREIRO: ]]></text>
+				</staticText>
+				<textField>
+					<reportElement key="" style="m1" x="95" y="21" width="30" height="20" uuid="b6abd8d1-ccf3-4eff-81e2-55b02c180d3f"/>
+					<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+						<topPen lineWidth="0.5"/>
+						<leftPen lineWidth="0.5"/>
+						<bottomPen lineWidth="0.5"/>
+						<rightPen lineWidth="0.5"/>
+					</box>
+					<textFieldExpression><![CDATA[(($F{m1} == 1) ?  "PAG" : "ABE" )
+
+
+]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="45" y="21" width="50" height="20" uuid="99cd7b38-366f-4f30-818e-4ddebbc46dd1"/>
+					<box topPadding="1" leftPadding="1" bottomPadding="1" rightPadding="1">
+						<topPen lineWidth="0.5"/>
+						<leftPen lineWidth="0.5"/>
+						<bottomPen lineWidth="0.5"/>
+						<rightPen lineWidth="0.5"/>
+					</box>
+					<text><![CDATA[JANEIRO:]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="2" y="2" width="551" height="18" uuid="2da104e3-7768-4994-b2b5-8f26c01db010"/>
+					<textElement textAlignment="Center">
+						<font size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA["ANO DE REFERENCIA: "+$F{ano}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupFooter>
+	</group>
+	<group name="Group2">
+		<groupExpression><![CDATA[$F{dataEntrada}]]></groupExpression>
+		<groupHeader>
+			<band height="20">
+				<textField isBlankWhenNull="true">
+					<reportElement positionType="Float" x="450" y="0" width="107" height="20" forecolor="#000000" uuid="3a616ee3-2799-4183-84b9-c4ef0a67c703"/>
+					<textElement>
+						<font fontName="Arial" size="12" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{dataEntrada}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="4" y="0" width="150" height="20" uuid="c20b28d0-6a43-45f1-aea7-b39c1a582107"/>
+					<textElement>
+						<font size="12" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Mensalidade: " +$F{valor}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="154" y="0" width="226" height="20" uuid="084e9112-5796-46ef-87ff-6f0ba306d21c"/>
+					<textElement markup="styled">
+						<font size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA[" Contato: "+$F{telefone}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupHeader>
+	</group>
+	<group name="idCliente">
+		<groupExpression><![CDATA[$F{idCliente}]]></groupExpression>
+	</group>
+	<group name="valor">
+		<groupExpression><![CDATA[$F{valor}]]></groupExpression>
+	</group>
+	<group name="ano">
+		<groupExpression><![CDATA[$F{ano}]]></groupExpression>
+	</group>
+	<group name="m1">
+		<groupExpression><![CDATA[$F{m1}]]></groupExpression>
+	</group>
+	<group name="m2">
+		<groupExpression><![CDATA[$F{m2}]]></groupExpression>
+	</group>
+	<group name="m3">
+		<groupExpression><![CDATA[$F{m3}]]></groupExpression>
+	</group>
+	<group name="m4">
+		<groupExpression><![CDATA[$F{m4}]]></groupExpression>
+	</group>
+	<group name="m5">
+		<groupExpression><![CDATA[$F{m5}]]></groupExpression>
+	</group>
+	<group name="m6">
+		<groupExpression><![CDATA[$F{m6}]]></groupExpression>
+	</group>
+	<group name="m7">
+		<groupExpression><![CDATA[$F{m7}]]></groupExpression>
+	</group>
+	<group name="m8">
+		<groupExpression><![CDATA[$F{m8}]]></groupExpression>
+	</group>
+	<group name="m9">
+		<groupExpression><![CDATA[$F{m9}]]></groupExpression>
+	</group>
+	<group name="m10">
+		<groupExpression><![CDATA[$F{m10}]]></groupExpression>
+	</group>
+	<group name="m11">
+		<groupExpression><![CDATA[$F{m11}]]></groupExpression>
+	</group>
+	<group name="m12">
+		<groupExpression><![CDATA[$F{m12}]]></groupExpression>
+	</group>
+	<background>
+		<band height="802" splitType="Stretch">
+			<image>
+				<reportElement x="-20" y="60" width="100" height="65" uuid="847f1a8b-e48a-47b2-85db-1279aa8de550">
+					<printWhenExpression><![CDATA[$V{PAGE_NUMBER} == 1]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA["icone site.fw.png"]]></imageExpression>
+			</image>
+		</band>
+	</background>
+	<title>
+		<band height="94" splitType="Stretch">
+			<staticText>
+				<reportElement style="SubTitle" x="120" y="65" width="433" height="29" uuid="7a8ee983-690c-4f4d-9330-42613bd3d628"/>
+				<textElement textAlignment="Right">
+					<font size="22" isBold="false"/>
+				</textElement>
+				<text><![CDATA[RELATÓRIO DE PAGAMENTOS]]></text>
+			</staticText>
+			<frame>
+				<reportElement mode="Opaque" x="-20" y="0" width="597" height="65" forecolor="#006699" backcolor="#2B5784" uuid="29f958b3-9df5-4ee0-905e-9fd33029926f"/>
+				<staticText>
+					<reportElement style="Title" x="60" y="0" width="517" height="65" uuid="cf1fabd8-9376-4a95-a65d-c762a7404011"/>
+					<textElement textAlignment="Right">
+						<font size="54" isBold="false"/>
+					</textElement>
+					<text><![CDATA[MENSALIDADES]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="27" splitType="Stretch">
+			<frame>
+				<reportElement x="227" y="0" width="328" height="20" uuid="793d06e1-d7cc-4d62-ad99-d289a8ce0026"/>
+			</frame>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="11" splitType="Stretch">
+			<frame>
+				<reportElement x="380" y="0" width="175" height="10" uuid="dec77cf2-1014-4b3e-9934-7f0c65a83bce"/>
+				<line>
+					<reportElement positionType="FixRelativeToBottom" x="-380" y="6" width="555" height="1" uuid="0a05d19c-77ff-48d5-91d6-460d221419e5"/>
+					<graphicElement>
+						<pen lineWidth="0.5" lineColor="#999999"/>
+					</graphicElement>
+				</line>
+			</frame>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="7" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="13" splitType="Stretch">
+			<frame>
+				<reportElement mode="Opaque" x="2" y="0" width="555" height="13" forecolor="#D0B48E" backcolor="#2B5784" uuid="21b8ec89-3912-4f38-b1d2-846c348d496b"/>
+				<textField evaluationTime="Report">
+					<reportElement style="Column header" x="513" y="0" width="40" height="13" forecolor="#FFFFFF" uuid="2f1f4647-386f-4ee9-b3b1-779c70fd7960"/>
+					<textElement verticalAlignment="Middle">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="Column header" x="433" y="0" width="80" height="13" forecolor="#FFFFFF" uuid="c50a7647-9d9b-4145-89d7-15adb353fac4"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+				</textField>
+				<textField pattern="EEEEE dd MMMMM yyyy">
+					<reportElement style="Column header" x="2" y="0" width="197" height="13" forecolor="#FFFFFF" uuid="2a75ce15-0152-4154-9a45-a23c6a9d3107"/>
+					<textElement verticalAlignment="Middle">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

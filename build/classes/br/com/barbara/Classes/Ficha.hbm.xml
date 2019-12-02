@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 14/04/2019 23:32:51 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="br.com.barbara.Classes.Ficha" table="ficha" catalog="tecinova" optimistic-lock="version">
+        <id name="idficha" type="java.lang.Integer">
+            <column name="idficha" />
+            <generator class="identity" />
+        </id>
+        <property name="dataEntrada" type="date">
+            <column name="dataEntrada" length="10" not-null="true" />
+        </property>
+        <property name="sexo" type="string">
+            <column name="sexo" length="10" not-null="true" />
+        </property>
+        <property name="peso" type="float">
+            <column name="peso" precision="12" scale="0" not-null="true" />
+        </property>
+        <property name="medicacao" type="string">
+            <column name="medicacao" length="80" not-null="true" />
+        </property>
+        <property name="acompanhamento" type="string">
+            <column name="acompanhamento" length="15" not-null="true" />
+        </property>
+        <property name="problemaSaude" type="string">
+            <column name="problemaSaude" length="30" not-null="true" />
+        </property>
+        <property name="altura" type="float">
+            <column name="altura" precision="12" scale="0" not-null="true" />
+        </property>
+        <property name="objetivo" type="string">
+            <column name="objetivo" length="65535" not-null="true" />
+        </property>
+        <property name="profissao" type="string">
+            <column name="profissao" length="30" not-null="true" />
+        </property>
+        <property name="idCliente" type="int">
+            <column name="idCliente" not-null="true" />
+        </property>
+        <property name="frequenciacardrep" type="float">
+            <column name="frequenciacardrep" precision="12" scale="0" not-null="true" />
+        </property>
+        <property name="frequenciacardMax" type="float">
+            <column name="frequenciacardMax" precision="12" scale="0" not-null="true" />
+        </property>
+        <property name="calculoFcm" type="float">
+            <column name="calculoFCM" precision="12" scale="0" not-null="true" />
+        </property>
+        <property name="idade" type="int">
+            <column name="idade" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 06/02/2019 16:30:10 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="br.com.barbara.Classes.Mensalidade" table="mensalidade" catalog="tecinova" optimistic-lock="version">
+        <id name="idmensalidade" type="java.lang.Integer">
+            <column name="idmensalidade" />
+            <generator class="identity" />
+        </id>
+        <property name="dataEntrada" type="date">
+            <column name="dataEntrada" length="10" not-null="true" />
+        </property>
+        <property name="idCliente" type="int">
+            <column name="idCliente" not-null="true" />
+        </property>
+        <property name="valor" type="float">
+            <column name="valor" precision="12" scale="0" not-null="true" />
+        </property>
+        <property name="ano" type="string">
+            <column name="ano" length="4" not-null="true" />
+        </property>
+        <property name="m1" type="int">
+            <column name="m1" not-null="true" />
+        </property>
+        <property name="m2" type="int">
+            <column name="m2" not-null="true" />
+        </property>
+        <property name="m3" type="int">
+            <column name="m3" not-null="true" />
+        </property>
+        <property name="m4" type="int">
+            <column name="m4" not-null="true" />
+        </property>
+        <property name="m5" type="int">
+            <column name="m5" not-null="true" />
+        </property>
+        <property name="m6" type="int">
+            <column name="m6" not-null="true" />
+        </property>
+        <property name="m7" type="int">
+            <column name="m7" not-null="true" />
+        </property>
+        <property name="m8" type="int">
+            <column name="m8" not-null="true" />
+        </property>
+        <property name="m9" type="int">
+            <column name="m9" not-null="true" />
+        </property>
+        <property name="m10" type="int">
+            <column name="m10" not-null="true" />
+        </property>
+        <property name="m11" type="int">
+            <column name="m11" not-null="true" />
+        </property>
+        <property name="m12" type="int">
+            <column name="m12" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
